@@ -169,4 +169,81 @@ document.addEventListener("DOMContentLoaded", () => {
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
+
+  /* ==========================================================================
+       7. Skills Auto-Showcase Engine (Automatic Cycle with Hover-Pause)
+       ========================================================================== */
+  const skillTabs = document.querySelectorAll(".skill-tab");
+  const skillCards = document.querySelectorAll(".skill-card[data-category]");
+  const skillsSection = document.getElementById("skills");
+
+  if (skillTabs.length && skillCards.length) {
+    const categories = ["frontend", "backend", "database", "mobile"];
+    let currentCategoryIndex = 0;
+    let autoPlayTimer = null;
+    let isPaused = false;
+
+    function setCategory(category) {
+      // Update Tab states
+      skillTabs.forEach((tab) => {
+        const isSelected = tab.getAttribute("data-category") === category;
+        tab.classList.toggle("active", isSelected);
+        tab.setAttribute("aria-selected", isSelected ? "true" : "false");
+      });
+
+      // Filter cards with smooth entrance
+      skillCards.forEach((card) => {
+        if (card.getAttribute("data-category") === category) {
+          card.classList.remove("is-hidden");
+          card.classList.add("is-visible");
+        } else {
+          card.classList.add("is-hidden");
+          card.classList.remove("is-visible");
+        }
+      });
+    }
+
+    // Initialize with default (Frontend)
+    setCategory(categories[0]);
+
+    function nextCategory() {
+      if (!isPaused) {
+        currentCategoryIndex = (currentCategoryIndex + 1) % categories.length;
+        setCategory(categories[currentCategoryIndex]);
+      }
+    }
+
+    // Start Auto-Cycle (Every 4.5 seconds)
+    function startAutoPlay() {
+      if (!autoPlayTimer) {
+        autoPlayTimer = setInterval(nextCategory, 4500);
+      }
+    }
+
+    function stopAutoPlay() {
+      clearInterval(autoPlayTimer);
+      autoPlayTimer = null;
+    }
+
+    startAutoPlay();
+
+    // Pause when mouse hovers over skills section
+    if (skillsSection) {
+      skillsSection.addEventListener("mouseenter", () => {
+        isPaused = true;
+      });
+
+      skillsSection.addEventListener("mouseleave", () => {
+        isPaused = false;
+      });
+    }
+
+    // Allow manual clicking anytime
+    skillTabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => {
+        currentCategoryIndex = index;
+        setCategory(tab.getAttribute("data-category"));
+      });
+    });
+  }
 });
