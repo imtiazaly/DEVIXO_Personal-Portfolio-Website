@@ -373,71 +373,125 @@
           </div>
         </div>
       </section>
-
+      
       <!-- 4. Skills Section -->
       <section class="skills section" id="skills">
         <div class="container">
           <div class="section__header">
-            <span class="section__subtitle">Technical Capabilities</span>
+            <span class="section__subtitle"
+              >Verified Technical Capabilities</span
+            >
             <h2 class="section__title">Skills &amp; Expertise</h2>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.95rem;
+                margin-top: 0.75rem;
+              "
+            >
+              Backed by hands-on engineering across 59+ public repositories and
+              3 industry internships.
+            </p>
           </div>
 
           <div class="skills__grid grid">
-            <!-- HTML5 -->
+            <!-- 1. HTML5 -->
             <div class="skill-card">
               <div class="skill-card__header">
                 <div class="skill-card__icon html-icon" aria-hidden="true">
                   &lt;/&gt;
                 </div>
-                <span class="skill-card__level">Advanced</span>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >15 Projects</span
+                  >
+                  <span class="skill-card__level">Advanced</span>
+                </div>
               </div>
               <h3 class="skill-card__title">HTML5 &amp; Web Standards</h3>
               <p class="skill-card__desc">
-                Semantic structure, SEO optimization, WCAG 2.1 AA accessibility,
-                and Canvas API.
+                Semantic architecture, WCAG 2.1 AA accessibility, Web APIs, SEO
+                meta tags, and Canvas 2D graphics.
               </p>
               <div class="skill-card__bar">
                 <div class="bar-fill" style="width: 95%"></div>
               </div>
             </div>
 
-            <!-- CSS3 -->
+            <!-- 2. CSS3 -->
             <div class="skill-card">
               <div class="skill-card__header">
                 <div class="skill-card__icon css-icon" aria-hidden="true">
                   #
                 </div>
-                <span class="skill-card__level">Advanced</span>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >16 Projects</span
+                  >
+                  <span class="skill-card__level">Advanced</span>
+                </div>
               </div>
               <h3 class="skill-card__title">CSS3 &amp; Modern Layouts</h3>
               <p class="skill-card__desc">
-                CSS Grid, Flexbox, Custom Properties (variables), Responsive
-                Design, and Keyframe Animations.
+                CSS Grid, Flexbox, Custom Properties (variables), Fluid
+                typography (clamp), 60fps Keyframe micro-interactions.
+              </p>
+              <div class="skill-card__bar">
+                <div class="bar-fill" style="width: 94%"></div>
+              </div>
+            </div>
+
+            <!-- 3. JavaScript -->
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <div class="skill-card__icon js-icon" aria-hidden="true">
+                  JS
+                </div>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >19 Projects</span
+                  >
+                  <span class="skill-card__level">Advanced</span>
+                </div>
+              </div>
+              <h3 class="skill-card__title">JavaScript (ES6+)</h3>
+              <p class="skill-card__desc">
+                Asynchronous programming (Promises, Async/Await), DOM
+                manipulation, Event Loop, LocalStorage, and WebSockets.
               </p>
               <div class="skill-card__bar">
                 <div class="bar-fill" style="width: 92%"></div>
               </div>
             </div>
 
-            <!-- JavaScript & TypeScript -->
+            <!-- 4. TypeScript -->
             <div class="skill-card">
               <div class="skill-card__header">
-                <div class="skill-card__icon js-icon" aria-hidden="true">
-                  JS
+                <div
+                  class="skill-card__icon js-icon"
+                  style="background: rgba(49, 120, 198, 0.15); color: #3178c6"
+                  aria-hidden="true"
+                >
+                  TS
                 </div>
-                <span class="skill-card__level">Advanced</span>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >21 Projects</span
+                  >
+                  <span class="skill-card__level">Advanced</span>
+                </div>
               </div>
-              <h3 class="skill-card__title">JavaScript &amp; TypeScript</h3>
+              <h3 class="skill-card__title">TypeScript</h3>
               <p class="skill-card__desc">
-                ES6+, strict typing, asynchronous programming, WebSockets, DOM
-                APIs, and scalable modules.
+                Strict type safety, Generics, Interfaces, type unions, and
+                full-stack type contracts across React, Node, and APIs.
               </p>
               <div class="skill-card__bar">
                 <div class="bar-fill" style="width: 90%"></div>
               </div>
             </div>
 
-            <!-- React 19 & Next.js -->
+            <!-- 5. React 19 & Next.js 16 -->
             <div class="skill-card">
               <div class="skill-card__header">
                 <div
@@ -447,19 +501,134 @@
                 >
                   ⚛
                 </div>
-                <span class="skill-card__level">Advanced</span>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >10 Projects</span
+                  >
+                  <span class="skill-card__level">Advanced</span>
+                </div>
               </div>
-              <h3 class="skill-card__title">React 19 &amp; Three.js</h3>
+              <h3 class="skill-card__title">React 19 &amp; Next.js 16</h3>
               <p class="skill-card__desc">
-                React Three Fiber, Next.js 16, Vite, Framer Motion, Redux
-                Toolkit, and 3D graphics rendering.
+                Server Components, App Router, React Hooks, Redux Toolkit, Vite,
+                and Framer Motion micro-interactions.
               </p>
               <div class="skill-card__bar">
                 <div class="bar-fill" style="width: 88%"></div>
               </div>
             </div>
 
-            <!-- Backend: Node & Laravel -->
+            <!-- 6. Vue.js 3 & Inertia.js -->
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <div
+                  class="skill-card__icon js-icon"
+                  style="background: rgba(79, 192, 141, 0.15); color: #4fc08d"
+                  aria-hidden="true"
+                >
+                  V3
+                </div>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >8 Projects</span
+                  >
+                  <span class="skill-card__level">Proficient</span>
+                </div>
+              </div>
+              <h3 class="skill-card__title">Vue.js 3 &amp; Inertia.js v3</h3>
+              <p class="skill-card__desc">
+                Composition API, Pinia state management, single-page application
+                routing, and reactive UI architecture.
+              </p>
+              <div class="skill-card__bar">
+                <div class="bar-fill" style="width: 86%"></div>
+              </div>
+            </div>
+
+            <!-- 7. Tailwind CSS v4 & Bootstrap -->
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <div
+                  class="skill-card__icon css-icon"
+                  style="background: rgba(6, 182, 212, 0.15); color: #06b6d4"
+                  aria-hidden="true"
+                >
+                  TW
+                </div>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >20 Projects</span
+                  >
+                  <span class="skill-card__level">Advanced</span>
+                </div>
+              </div>
+              <h3 class="skill-card__title">Tailwind CSS (v3 &amp; v4)</h3>
+              <p class="skill-card__desc">
+                Utility-first design, custom theme tokens, dark mode engines,
+                Bootstrap 5 responsive grids, and design systems.
+              </p>
+              <div class="skill-card__bar">
+                <div class="bar-fill" style="width: 92%"></div>
+              </div>
+            </div>
+
+            <!-- 8. Three.js & 3D Graphics -->
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <div
+                  class="skill-card__icon html-icon"
+                  style="background: rgba(168, 85, 247, 0.15); color: #a855f7"
+                  aria-hidden="true"
+                >
+                  3D
+                </div>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >Astrovia</span
+                  >
+                  <span class="skill-card__level">Specialized</span>
+                </div>
+              </div>
+              <h3 class="skill-card__title">
+                Three.js &amp; React Three Fiber
+              </h3>
+              <p class="skill-card__desc">
+                Procedural 3D planetary physics, orbital math, scene graphs,
+                particle belts, and dynamic camera fly-to animations.
+              </p>
+              <div class="skill-card__bar">
+                <div class="bar-fill" style="width: 82%"></div>
+              </div>
+            </div>
+
+            <!-- 9. Node.js & Express 5 -->
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <div
+                  class="skill-card__icon py-icon"
+                  style="background: rgba(34, 197, 94, 0.15); color: #22c55e"
+                  aria-hidden="true"
+                >
+                  Node
+                </div>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >12 Projects</span
+                  >
+                  <span class="skill-card__level">Advanced</span>
+                </div>
+              </div>
+              <h3 class="skill-card__title">Node.js &amp; Express.js 5</h3>
+              <p class="skill-card__desc">
+                Scalable RESTful CRUD routing engines, Zod validation pipelines,
+                JWT authentication, and defensive middleware.
+              </p>
+              <div class="skill-card__bar">
+                <div class="bar-fill" style="width: 88%"></div>
+              </div>
+            </div>
+
+            <!-- 10. Laravel 13 & PHP -->
             <div class="skill-card">
               <div class="skill-card__header">
                 <div
@@ -467,77 +636,176 @@
                   style="background: rgba(239, 68, 68, 0.15); color: #ef4444"
                   aria-hidden="true"
                 >
-                  BE
+                  PHP
                 </div>
-                <span class="skill-card__level">Proficient</span>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >8 Projects</span
+                  >
+                  <span class="skill-card__level">Proficient</span>
+                </div>
               </div>
-              <h3 class="skill-card__title">
-                Backend: Laravel 13 &amp; Node.js
-              </h3>
+              <h3 class="skill-card__title">Laravel 13 &amp; PHP</h3>
               <p class="skill-card__desc">
-                Express 5, RESTful CRUD APIs, Zod validation, JWT
-                authentication, and background queues.
+                Eloquent ORM relational modeling, Laravel Sanctum token auth,
+                background queues, and Blade templating architecture.
               </p>
               <div class="skill-card__bar">
                 <div class="bar-fill" style="width: 86%"></div>
               </div>
             </div>
 
-            <!-- Databases & Redis -->
+            <!-- 11. PostgreSQL & MySQL -->
             <div class="skill-card">
               <div class="skill-card__header">
                 <div
                   class="skill-card__icon cpp-icon"
-                  style="background: rgba(16, 185, 129, 0.15); color: #10b981"
+                  style="background: rgba(59, 130, 246, 0.15); color: #3b82f6"
                   aria-hidden="true"
                 >
-                  DB
+                  SQL
                 </div>
-                <span class="skill-card__level">Proficient</span>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >11 Projects</span
+                  >
+                  <span class="skill-card__level">Advanced</span>
+                </div>
               </div>
-              <h3 class="skill-card__title">Databases &amp; Real-Time</h3>
+              <h3 class="skill-card__title">PostgreSQL, MySQL &amp; Prisma</h3>
               <p class="skill-card__desc">
-                PostgreSQL, MySQL, MongoDB Atlas, Prisma ORM, Sequelize,
-                Socket.IO, and Redis Streams.
+                Relational database schemas, ACID transactions, foreign key
+                indexing, Prisma ORM, and Sequelize migrations.
+              </p>
+              <div class="skill-card__bar">
+                <div class="bar-fill" style="width: 88%"></div>
+              </div>
+            </div>
+
+            <!-- 12. MongoDB & NoSQL -->
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <div
+                  class="skill-card__icon cpp-icon"
+                  style="background: rgba(71, 162, 72, 0.15); color: #47a248"
+                  aria-hidden="true"
+                >
+                  MDB
+                </div>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >Dukaan</span
+                  >
+                  <span class="skill-card__level">Proficient</span>
+                </div>
+              </div>
+              <h3 class="skill-card__title">MongoDB Atlas &amp; Mongoose</h3>
+              <p class="skill-card__desc">
+                Document data modeling, schema validations, replica set ACID
+                multi-document transactions, and inventory indexing.
               </p>
               <div class="skill-card__bar">
                 <div class="bar-fill" style="width: 84%"></div>
               </div>
             </div>
 
-            <!-- Python & C++ -->
+            <!-- 13. Real-Time: Socket.IO & Redis -->
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <div
+                  class="skill-card__icon js-icon"
+                  style="background: rgba(220, 38, 38, 0.15); color: #dc2626"
+                  aria-hidden="true"
+                >
+                  RT
+                </div>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >PulseHub</span
+                  >
+                  <span class="skill-card__level">Advanced</span>
+                </div>
+              </div>
+              <h3 class="skill-card__title">Socket.IO &amp; Redis Streams</h3>
+              <p class="skill-card__desc">
+                Full-duplex WebSockets, Redis Streams audit replay, horizontal
+                multi-instance scaling via Redis Adapter, and presence sets.
+              </p>
+              <div class="skill-card__bar">
+                <div class="bar-fill" style="width: 86%"></div>
+              </div>
+            </div>
+
+            <!-- 14. React Native & Mobile -->
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <div
+                  class="skill-card__icon js-icon"
+                  style="background: rgba(99, 102, 241, 0.15); color: #6366f1"
+                  aria-hidden="true"
+                >
+                  RN
+                </div>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >14 Projects</span
+                  >
+                  <span class="skill-card__level">Advanced</span>
+                </div>
+              </div>
+              <h3 class="skill-card__title">React Native &amp; Expo</h3>
+              <p class="skill-card__desc">
+                Cross-platform iOS/Android development, React Navigation v7,
+                AsyncStorage offline sync, audio players, and haptics.
+              </p>
+              <div class="skill-card__bar">
+                <div class="bar-fill" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <!-- 15. Python & C++ -->
             <div class="skill-card">
               <div class="skill-card__header">
                 <div class="skill-card__icon cpp-icon" aria-hidden="true">
                   C++
                 </div>
-                <span class="skill-card__level">Intermediate</span>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >Core CS</span
+                  >
+                  <span class="skill-card__level">Intermediate</span>
+                </div>
               </div>
               <h3 class="skill-card__title">Python &amp; C++</h3>
               <p class="skill-card__desc">
-                Object-oriented programming, data structures, algorithm design,
-                and computational logic.
+                Data structures, algorithm complexity analysis, object-oriented
+                software patterns, and computational problem solving.
               </p>
               <div class="skill-card__bar">
                 <div class="bar-fill" style="width: 80%"></div>
               </div>
             </div>
 
-            <!-- Git & DevOps -->
+            <!-- 16. Git, GitHub & Docker -->
             <div class="skill-card">
               <div class="skill-card__header">
                 <div class="skill-card__icon git-icon" aria-hidden="true">
                   Git
                 </div>
-                <span class="skill-card__level">Proficient</span>
+                <div style="display: flex; gap: 0.4rem; align-items: center">
+                  <span class="skill-card__level" style="color: var(--primary)"
+                    >59 Repos</span
+                  >
+                  <span class="skill-card__level">Proficient</span>
+                </div>
               </div>
               <h3 class="skill-card__title">Git, GitHub &amp; Docker</h3>
               <p class="skill-card__desc">
-                Version control, branch workflows, pull requests, Docker
-                Compose, and CI/CD pipelines.
+                Branch workflows, pull requests, semantic commit conventions,
+                Docker Compose multi-service container orchestration.
               </p>
               <div class="skill-card__bar">
-                <div class="bar-fill" style="width: 88%"></div>
+                <div class="bar-fill" style="width: 90%"></div>
               </div>
             </div>
           </div>
